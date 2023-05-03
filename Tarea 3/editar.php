@@ -35,7 +35,7 @@
 
                 $nombre = "";
                 $descripcion = "";
-
+                
                 header("Location: buscar.php");
             }  
         ?>
