@@ -1,0 +1,74 @@
+body{
+    background-image:linear-gradient(rgba(39, 40, 43, 0.75), rgba(38, 40, 46, 0.75)),
+    url(https://cdn.pixabay.com/photo/2020/03/19/05/13/landscape-4946313_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tarea1{
+    background-image:url(https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+    position: fixed;
+	top: 25%;
+	bottom: 0;
+	left: 37%;
+	right: 0;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+	justify-content: center;
+    display:flex;
+
+}
+.boton{
+    cursor: pointer;
+    border: solid 1px rgb(7, 7, 7);
+    border-radius: 10px;
+    background: rgb(129, 138, 209);
+    color: #141414;
+    display: center ;
+    width: 78px;
+    height: 37px;
+    margin: 5px;
+    font-size: 18px;   
+    align-items:left; 
+}
+.btn{
+margin: 15px;
+width: 336px;
+background-color: rgb(99, 182, 106);
+align-items: center;
+border:black;
+cursor: pointer;
+}
+.field{
+    width: 345px;
+    height: 35px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+a{
+    color:white;
+    font-size: 40px;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+b{
+    color:white;
+    text-decoration: none;
+}
+b:hover{
+   color:aqua;
+}
+.brand img{
+    width:175px;
+
+}
+   
