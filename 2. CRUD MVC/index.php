@@ -1,5 +1,4 @@
 <?php
-
 require_once 'model/database.php';
 $controller = 'proveedor';
 
@@ -16,6 +15,4 @@ if (!isset($_REQUEST['c'])){
     $controller = new $controller; 
     call_user_func(array($controller, $accion)); 
 }
-
-
 ?>
