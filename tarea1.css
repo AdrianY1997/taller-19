@@ -1,0 +1,37 @@
+.container1 {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 20px; /* Agrega un margen inferior */
+  }
+  
+  .containerp {
+    margin-right: 20px; /* Agrega un margen derecho */
+    flex: 1; /* Ocupa todo el espacio restante del contenedor */
+  }
+  
+  .container2 img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
+    display: block; /* Quita el margen predeterminado de la imagen */
+  }
+  
+  form {
+    background-color: #f2f2f2; /* Agrega un color de fondo al formulario */
+    padding: 20px; /* Agrega un relleno al formulario */
+    border-radius: 5px; /* Agrega bordes redondeados */
+  }
+  
+  button {
+    margin-top: 10px; /* Agrega un margen superior a los botones */
+    margin-right: 10px; /* Agrega un margen derecho a los botones */
+    padding: 5px 10px; /* Agrega un relleno a los botones */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    background-color: #4CAF50; /* Agrega un color de fondo a los botones */
+    color: white; /* Agrega un color de texto a los botones */
+    border: none; /* Elimina los bordes de los botones */
+    cursor: pointer; /* Cambia el cursor del ratón cuando se coloca sobre los botones */
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Agrega un color de fondo diferente cuando se coloca sobre los botones */
+  }
+  
