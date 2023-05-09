@@ -1,0 +1,36 @@
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/376/676/non_2x/abstract-futuristic-technology-white-background-template-with-circle-line-and-copyspace-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.cont{
+    background-color: rgba(182, 182, 182, 0.547);
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 35%;
+    height: 360px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.recua{
+    margin: 40px;
+    text-align: center;
+}
+label{
+    margin: 10px;
+    font-size: 20px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+.env{
+    background-color: rgba(139, 139, 139, 0.648);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
