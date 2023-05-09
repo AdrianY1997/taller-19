@@ -3,7 +3,7 @@
 //Conexión a la base de datos
 require "conexion.php";
 $db = new Database();
-$con = $db->conectar();
+$con = $db->conectar();git config --global --unset-all
 
 
 
