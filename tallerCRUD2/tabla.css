@@ -1,0 +1,9 @@
+
+body{
+  background: #74797c;
+}
+
+
+table tr:nth-child(odd) {background-color: grey;}
+
+table tr:nth-child(even) {background-color: rgba(0, 183, 255, 0.503);}
