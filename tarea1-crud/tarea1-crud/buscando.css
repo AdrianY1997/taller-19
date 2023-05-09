@@ -1,0 +1,9 @@
+.container{
+ background-color: aqua;
+ justify-content:center ;
+ background-repeat: no-repeat;
+ display: flex;
+    height: 37vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
