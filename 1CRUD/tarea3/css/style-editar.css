@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.main-wrapper{
+    background-color: aliceblue;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.786);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+form{
+    width: 400px;
+    margin: 0;
+    font-size: 12pt;
+}
+    h4{
+        font-size: 14pt;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 95%;
+        padding: .5rem;
+        margin-bottom: 15px;
+        font-size: 12pt;
+        border: 1px solid rgba(0, 0, 0, 0.375);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .btn{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    input:focus{
+        border:  1px solid rgba(0, 0, 0, 0.375);
+        outline: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.371);
+    }
+
+    .boton{
+        padding: .5rem;
+        cursor: pointer;
+        display: flex;
+    }
+    .buton{
+        text-decoration: none;
+        padding: .5rem;
+        width: 100%;
+        color: black;
+        margin-bottom: 15px;
+        font-size: 12pt;
+        border: 1px solid rgba(0, 0, 0, 0.375);
+        text-align: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        
+    }

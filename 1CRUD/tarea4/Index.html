@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div>
+        <form name="form1" method="POST" action="agrega.php">
+            <p>CODIGO DEL PRODUCTO:</p>
+            <input type="text" class="field" name="idproducto"  required>
+            <p>NOMBRE DEL PRODUCTO:</p>
+            <input type="text" class="field"name="nombre" required> 
+            <p>DESCRIPCION:</p>
+            <input type ="text" class="field" name="descripcion" required> 
+            <p class="center-content"> <input type="submit" class="btn" value="Enviar Datos"> </p>
+            <p class="center-content"><a class="boton" href="buscar.php">MOSTRAR REGISTROS</a> 
+            <a class="boton" href="borra.php">ELIMINAR TODOS LOS REGISTROS</a> </p>
+            <p class="center-content"><a class="boton" href="elimina2.php">BORARR LA BASE DE DATOS</a> </p>
+        </form>    
+    </div>
+   
+
+</body>
+</html>
