@@ -1,0 +1,123 @@
+:root {
+    --Caveat: "Caveat", cursive;
+    --OpenSans: "Open Sans", sans-serif;
+    --chinese:"chinese"
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  /* Estilos generales */
+  body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+   /* estilos buscar.php */
+   .parent-container {
+     max-width: 1000px;
+     margin: 0 auto;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+     margin-top: 15%;
+   }
+   /* .title {
+     text-transform: uppercase;
+     text-align: center;
+     font-family:var(--OpenSans);
+     padding-bottom: 30px;
+   } */
+   /* Estilos para la tabla */
+   .table-container {
+     width: 100%;
+     max-width: 800px;
+     margin: 0 auto;
+   }
+   table {
+     border-collapse: collapse;
+     width: 100%;
+     margin: 20px 0;
+   }
+   thead tr {
+     transition: all .5s ease;
+     background-color: whitesmoke;
+     font-family: var(--OpenSans);
+   }
+   th {
+     padding: 12px;
+     font-weight: bold;
+     text-transform: uppercase;
+     border: 5px solid white;
+   }
+   thead tr:hover {
+     background-color: gray;
+     color: #FFFFFF;
+     transition: all .5s ease;
+   }
+   p{
+    font-family: var(--OpenSans);
+    font-weight: 800;
+   }
+
+   td, th {
+     font-family: var(--OpenSans);
+     padding: 8px;
+     text-align: left;
+   }
+   .form-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 30px;
+   }
+   form {
+     width: 100%;
+   }
+
+   /* Estilos de los campos de entrada */
+   .form-container input[type="text"] {
+     background-color: whitesmoke;
+     width: 100%;
+     border: none;
+     border-radius: 5px;
+     font-size: 10pt;
+     padding: 10px 20px;
+     font-family: var(--OpenSans);
+     font-weight: 600;
+     color: #191919;
+     transition: all 0.7s;
+   }
+   .form-container form input[type="text"]:hover {
+     outline: none;
+     background-color: rgba(245, 245, 245, 0.74);
+     color: #191919;
+   }
+   .form-container form input:focus {
+    outline: none;
+    background-color: whitesmoke;
+    color: #191919;
+    border: none;
+  }
+  
+  input[type="submit"],.buton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 11pt;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-family: var(--Caveat);
+  }
+  input[type="submit"]:hover,.buton:hover {
+    background-color: red;
+    transition: all .5s ease;
+  }

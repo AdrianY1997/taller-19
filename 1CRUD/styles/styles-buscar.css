@@ -1,0 +1,142 @@
+:root {
+  --Caveat: "Caveat", cursive;
+  --OpenSans: "Open Sans", sans-serif;
+  --chinese:"chinese"
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Estilos generales */
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+ /* estilos buscar.php */
+ .parent-container {
+   max-width: 1000px;
+   margin: 0 auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   margin-top: 15%;
+ }
+ .title {
+   text-transform: uppercase;
+   text-align: center;
+   font-family:var(--OpenSans);
+   padding-bottom: 30px;
+ }
+ /* Estilos para la tabla */
+ .table-container {
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+ }
+ table {
+   border-collapse: collapse;
+   width: 100%;
+   margin: 20px 0;
+ }
+ thead tr {
+   transition: all .5s ease;
+   background-color: whitesmoke;
+   font-family: var(--OpenSans);
+ }
+ th {
+   padding: 12px;
+   font-weight: bold;
+   text-transform: uppercase;
+   border: 5px solid white;
+ }
+ thead tr:hover {
+   background-color: gray;
+   color: #FFFFFF;
+   transition: all .5s ease;
+ }
+ tbody td{
+  font-family: var(--OpenSans);
+ }
+ tbody td:nth-child(4) a,td:nth-child(5) a{
+  text-decoration: none;
+  color: #191919;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+ }
+
+ tbody td:nth-child(4):hover, tbody td:nth-child(4) a:hover{
+  background-color: whitesmoke;
+  color: #007fff;
+ }
+ tbody td:nth-child(5):hover, tbody td:nth-child(5) a:hover{
+  background-color: whitesmoke;
+  color: #ff0000;
+ }
+ td, th {
+   padding: 8px;
+   text-align: left;
+ }
+ .form-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 30px;
+ }
+ form {
+   width: 100%;
+ }
+ .input-group {
+   justify-content: flex-end;
+   align-items: center;
+   display: flex;
+   gap: 30px;
+ }
+ button {
+   font-family: var(--Caveat);
+   background-color: #4CAF50;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 11pt;
+   font-weight: 800;
+   border-radius: 5px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   transition: background-color 0.5s ease;
+ }
+ button:hover {
+   background-color: #3e8e41;
+   transition: all .5s ease;
+ }
+ /* Estilos de los campos de entrada */
+ .form-container input[type="text"] {
+   display: block;
+   width: 32%;
+   border: none;
+   border-radius: 5px;
+   font-size: 10pt;
+   padding: 10px 20px;
+   font-family: var(--OpenSans);
+   font-weight: 600;
+   color: #191919;
+   transition: all 0.7s;
+ }
+
+ 
+ .form-container form input:hover {
+   outline: none;
+   background-color: whitesmoke;
+   color: #191919;
+ }
+ .form-container form input:focus {
+  outline: none;
+  background-color: whitesmoke;
+  color: #191919;
+  border: none;
+}
