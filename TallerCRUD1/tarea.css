@@ -1,0 +1,47 @@
+body{
+    background: #306a99;
+}
+
+.tarea1{
+    background-color: white;
+    position: fixed;
+	top: 25%;
+	bottom: 0;
+	left: 37%;
+	right: 0;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+	justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+.botn{
+    cursor: pointer;
+    border: solid 2px gray;
+    background: rgb(3, 3, 3);
+    color: #ffffff;
+    display: flex ;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    font-size: 15px;   
+    align-items: center; 
+}
+.btn-secondary{
+margin: 10px;
+width: 300px;
+color: white;
+background-color: rgba(4, 0, 255, 0.788);
+border: none;
+border-radius:10px ;
+cursor: pointer;
+
+}
+.btn{
+   text-decoration: none;
+}
+.field{
+    width: 350px;
+    height: 35px;
+}
