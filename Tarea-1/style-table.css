@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg, #FF5733, #FFC300);
+    background-image: url('img/fondo.jpg');
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.contenedor{
+    border: 2px solid black;
+    border-radius: 15px;
+    position: absolute;
+    padding: 0 0 20px 0;
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    background-color:#e1d7f640;
+    font-family:monospace;   
+    font-size:15px;
+    box-shadow: 0 0 20px black;
+}
+
+table tr th{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tabla{
+    background-color: rgba(255, 255, 255, 0.409);
+   
+}
+
+.contenido{
+    font-family: serif;
+}
