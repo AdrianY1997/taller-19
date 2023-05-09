@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg, #FF5733, #FFC300);
+    background-image: url('img/fondo.jpg');
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.field{
+    width: 240px;
+}
+
+.formulario{
+    border: 4px solid black;
+    border-radius: 15px;
+    position: absolute;
+    padding: 0 0 20px 0;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    background-color:#e1d7f640;
+    font-family:monospace;   
+    font-size:15px;
+}
+
+.boton{
+    width: 245px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-enviar{
+    border-radius: 10px;
+    height: 43px;
+    background:whitesmoke;
+    width: 150px;
+    margin-left: 50px;
+
+}
+
+.btn-enviar a{
+    text-decoration: none;
+}
+
+.formulario form textarea{
+    width: 240px;
+    height: 40px;
+}
