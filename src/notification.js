@@ -61,4 +61,6 @@ const createNotification = (text, code) => {
     })
 
     toastContainer.appendChild(toast);
+
+    setTimeout(() => { thBtn.click() }, 5000)
 }

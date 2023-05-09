@@ -44,7 +44,7 @@
             <div class="card-footer bg-white">
                 <div class="d-flex justify-content-between">
                     <a href="listado.php" class="btn btn-primary">Mostrar listado</a>
-                    <a href="#" class="btn btn-danger">Eliminar Base de datos</a>
+                    <a id="truncate-products" href="#" class="btn btn-danger">Eliminar Base de datos</a>
                 </div>
             </div>
         </div>

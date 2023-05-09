@@ -1,4 +1,5 @@
 const insertForm = document.querySelector("#insert-form");
+const truncateBtn = document.querySelector("#truncate-products")
 var request;
 
 insertForm.addEventListener("submit", (e) => {
@@ -32,6 +33,7 @@ insertForm.addEventListener("submit", (e) => {
     });
 
     request.done((response) => {
+        console.log(response)
         response = JSON.parse(response);
         if (response) {
             if (!response.isOk && response.code == 1) {
@@ -40,5 +42,21 @@ insertForm.addEventListener("submit", (e) => {
             insertForm.reset();
             return createNotification("Se ha registrado el producto con éxito", 1);
         }
+    })
+})
+
+truncateBtn.addEventListener("click", () => {
+    request = $.ajax({
+        url: "../tarea1/ajax/truncate.php"
+    })
+
+    request.done((response) => {
+        response = JSON.parse(response)
+        console.log(response)
+        if (!response.isTruncated) {
+            return createNotification("No se ha podido eliminar la información", 2);
+        }
+
+        return createNotification("Se ha eliminado la información", 1);
     })
 })
