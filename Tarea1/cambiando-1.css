@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo {
+    width:fit-content;
+    margin: 10rem auto ;
+
+}
+
+input{
+    display: block;
+    margin: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+form{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:0 20px 25px rgba(92, 99, 105, .2) ;
+    
+}
+
+.button{
+   width: 150px;
+   height: 30px;
+   border-radius: 25px;
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   -ms-border-radius: 25px;
+   -o-border-radius: 25px;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
