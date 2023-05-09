@@ -1,0 +1,9 @@
+.container{
+    background-image: url(img/HD-wallpaper-anime-city-shop.jpg);
+   
+    display: flex;
+    height: 80vh;
+     align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+}
