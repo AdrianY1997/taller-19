@@ -1,0 +1,11 @@
+body{
+    background-color: bisque;
+}
+
+
+#tabla{
+    width: 80%;
+    height: 90%;
+    align-items: center;
+    border: 2px solid rgb(31, 30, 30) ;
+}
