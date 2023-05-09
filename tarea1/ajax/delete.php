@@ -28,7 +28,7 @@ try {
         exit;
     }
 } catch (\Throwable $e) {
-    $data["error"] = $e;
+    $data["error"] = mysqli_error($conn);
     echo json_encode($data);
     exit;
 }
@@ -42,7 +42,7 @@ try {
         $data["deleted"] = false;
     }
 } catch (\Throwable $e) {
-    $data["error"] = $e;
+    $data["error"] = mysqli_error($conn);
     echo json_encode($data);
     exit;
 }

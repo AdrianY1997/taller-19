@@ -37,30 +37,6 @@ if (!$isEmpty) {
         $data["isOk"] = false;
     }
 
-    $query = "SELECT nregistro FROM tarea1.logs ORDER BY nregistro DESC LIMIT 1";
-
-    try {
-        $result = mysqli_query($conn, $query);
-        $row = mysqli_fetch_object($result);
-        $nregistro = $row->nregistro + 1;
-    } catch (\Throwable $th) {
-        //throw $th;
-    }
-
-    $query = "INSERT INTO tarea1.logs (nregistro, action, user_id, tabla, data) VALUES ($nregistro, 'insertar', '1', 'products', '{codigo: \'$codigo\', name: \'$nombre\', description: \'$descripcion\'}')";
-    $data["isLogInserted"] = false;
-
-    try {
-        if (mysqli_query($conn, $query)) {
-            $data["isLogInserted"] = true;
-            $data["error"] = mysqli_error($conn);
-        }
-    } catch (mysqli_sql_exception $e) {
-        $data["error"] = $e;
-        echo json_encode($data);
-        exit;
-    }
-
     echo json_encode($data);
     exit;
 }

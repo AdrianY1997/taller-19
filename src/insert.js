@@ -6,19 +6,23 @@ insertForm.addEventListener("submit", (e) => {
     e.preventDefault();
     e.stopPropagation();
 
-    const idInput = document.querySelector("input[name='codigo-producto']").value;
-    const naInput = document.querySelector("input[name='nombre-producto']").value;
-    const dsInput = document.querySelector("textarea[name='descripcion-producto']").value;
+    const idInput = document.querySelector("input[name='codigo-producto']")
+    const naInput = document.querySelector("input[name='nombre-producto']")
+    const dsInput = document.querySelector("textarea[name='descripcion-producto']")
 
-    if (!idInput || !naInput || !dsInput) {
+    const idValue = idInput.value;
+    const naValue = naInput.value;
+    const dsValue = dsInput.value;
+
+    if (!idValue || !naValue || !dsValue) {
         return createNotification("Todos los campos deben estar llenos", 2);
     }
 
-    if (!/^\d+$/.test(idInput)) {
+    if (!/^\d+$/.test(idValue)) {
         return createNotification("El código del producto debe ser solo números", 2);
     }
 
-    if (!/^[a-zA-Z]/.test(naInput)) {
+    if (!/^[a-zA-Z]/.test(naValue)) {
         return createNotification("El nombre del producto debe empezar con una letra", 2);
     }
 
@@ -26,9 +30,9 @@ insertForm.addEventListener("submit", (e) => {
         type: "post",
         url: "../tarea1/ajax/insert.php",
         data: {
-            cod: idInput,
-            nam: naInput,
-            des: dsInput
+            cod: idValue,
+            nam: naValue,
+            des: dsValue
         }
     });
 
