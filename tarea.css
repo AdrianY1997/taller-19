@@ -1,0 +1,11 @@
+.cont{
+    text-align: center;
+    display: flex;
+    background-image: linear-gradient(270deg, #14d2df 0, #08d2e7 10%, #0cd1ee 20%, #1ad0f4 30%, #2bcffa 40%, #3bcdff 50%, #4bcbff 60%, #5bc9ff 70%, #6ac7ff 80%, #79c5ff 90%, #88c2ff 100%);
+    margin-left: 40%;
+    margin-right: 40%; 
+}
+.recua{
+    margin: 50px;
+    display: flex;
+}
