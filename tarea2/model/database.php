@@ -7,7 +7,7 @@ class Database {
     //root = nombre de usuario (solo para fines académicos=root).
     //’’ = contraseña del root (solo para fines académicos).
     public static function conectar() {
-        $pdo = new PDO('mysql:host=localhost;dbname=mvc_php;charset=utf8', 'root', '');
+        $pdo = new PDO('mysql:host=localhost;port=1002;dbname=mvc_php;charset=utf8', 'root', '');
 
         //Filtrando posibles errores de conexión.
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
