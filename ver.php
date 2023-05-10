@@ -63,8 +63,8 @@ $resultado = $comando->fetchAll(PDO::FETCH_ASSOC);
                             <a class="nav-link" href="#" id="buscar" >Buscar</a>
                         </li>
                         <div class="container-fluid d-none fade-left" style="transition: 2s" id="aja">
-                            <form class="d-flex" role="search">
-                                <input   id="input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <form class="d-flex" role="search" method="get" action="buscar.php">
+                                <input   id="input" class="form-control me-2" type="search" placeholder="Search" name="nombre" aria-label="Search">
                                 <button  id="search" class="btn btn-outline-success" type="submit">Search</button>
                             </form>
                         </div>

@@ -69,7 +69,7 @@ $con = $db->conectar();
                     </div>
                 </div>
             </a>
-            </div>|
+            </div>
 
             <div class="me-5" >
             <a href="#" class="btn btn-outline-success">
