@@ -40,7 +40,7 @@ class ProveedorController{
         $pvd->tel = $_REQUEST['tel'];
         $this->model->Registrar($pvd);
         header('Location: index.php');
-        }
+    }
 
     public function Editar(){
         $pvd = new proveedor();
@@ -50,9 +50,12 @@ class ProveedorController{
         $pvd->tel = $_REQUEST['tel'];
         $this->model->Actualizar($pvd);
         header('Location: index.php');
-        }
+    }
+
     public function Eliminar(){
         $this->model->Eliminar($_REQUEST['nit']);
         header('Location: index.php');
     }
 }
+
+?>
