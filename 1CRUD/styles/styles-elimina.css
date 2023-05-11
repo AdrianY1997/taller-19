@@ -121,3 +121,17 @@
     background-color: red;
     transition: all .5s ease;
   }
+          .buttons {
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+        }
+
+        .buttons .buton{
+          background-color: whitesmoke;
+          color: #191919;
+        }
+        .buttons .buton:hover{
+          background-color: #4a4a4a;
+          color: whitesmoke;
+        }
