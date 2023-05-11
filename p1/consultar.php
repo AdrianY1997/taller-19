@@ -20,15 +20,12 @@
         <tr>
             <td>N</td>
             <td>Codigo</td>
-            <td>Nombre </td>
+            <td>Nombre</td>
             <td>Descripcion </td>
         </tr>
         <?php
         include('conecta.php');
         $conecta = Conectar();
- 
-        ?>
-        <?php 
             if(isset($_POST['submit']) || !empty($_POST['id'])){
                 $id = $_POST["id"];
                 $sentencia="SELECT * FROM productos WHERE idproducto='".$id."'";

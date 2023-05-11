@@ -9,25 +9,50 @@
 </head>
 
 <body>
-<div class="main-wrapper">
+<div class="container">
 <h1>Registro actuales </h1>
 <br><br>
+<div class="d-flex m-3">
+        <a class="btn btn-primary m-3" href="../p1/index.php">Inicio</a>
+        <form class="m-3" action="<?php $_SERVER["PHP_SELF"]  ?>" method="post">
+            <input type="text" name="id">
+            <input type="submit" value="Buscar">
+			<a class="btn btn-danger " href="../p3/vaciar.php">Quieres vaciar los registros</a>
+        </form>
+		
+    </div>
 
 <?php
      include('../p1/conecta.php');
     $conecta=Conectar();
 ?>
-<table>
+<table class="table table-hover">
 	<tr>
 		<th>Nombre</th>
 		<th>Descripcion</th>
 		<th>Idproducto</th>
+		<th>Editar</th>
+		<th>Eliminar</th>
 	</tr>
 <?php 
-	$sql = "SELECT * FROM productos";
+	if(isset($_POST['submit']) || !empty($_POST['id'])){
+		$id = $_POST["id"];
+		$sentencia="SELECT * FROM productos WHERE idproducto='".$id."'";
+		$resultado = mysqli_query($conecta, $sentencia);
+		while ($most = mysqli_fetch_array($resultado)) {
+		?>
+		<tr>
+			<td><?php echo "" . $most['no']; ?></td>
+			<td><?php echo "" . $most['idproducto']; ?></td>
+			<td><?php echo "" . $most['nomproducto']; ?></td>
+			<td><?php echo "" . $most['descripcion']; ?></td>
+		</tr>
+	<?php
+	}
+	}else{$sql = "SELECT * FROM productos";
 	$result = mysqli_query($conecta, $sql);
-	while($mostrar = mysqli_fetch_object($result)){
-	?>
+	while($mostrar = mysqli_fetch_object($result)) {
+    ?>
 	<tr>
 		<td><?php echo $mostrar->nomproducto;?></td>
 		<td><?php echo $mostrar->descripcion;?></td> 
@@ -48,10 +73,8 @@
 </td>
 
 	</tr>
-	<?php } ?>
+	<?php } } ?>
 </table>
-<a class="btn btn-danger " href="../p3/vaciar.php">Quieres vaciar los registros</a>
-<a class="btn btn-primary" href="../p1/index.php">Inicio</a>
 </div>
 <script src="https://kit.fontawesome.com/7fa9974a48.js" crossorigin="anonymous"></script>
 </body>

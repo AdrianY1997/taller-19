@@ -14,6 +14,4 @@ $cadena=trim($nombredb);
 	}else{
 			echo "<script>alert('No tienes permitido eliminar esta base de datos : $cadena');window.location='../p4/eliminabd.php'</script>";
 		}
-	
-
 ?>
