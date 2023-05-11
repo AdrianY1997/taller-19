@@ -1,5 +1,5 @@
 <?php
-//Se incluye el modelo donde conectará el controlador.
+
 require_once "model/proveedor.php";
 class ProveedorController{
     private $model;
@@ -20,7 +20,6 @@ class ProveedorController{
         if(isset($_REQUEST['nit'])){
         $pvd = $this->model->Obtener($_REQUEST['nit']);
         }
-        //Llamado de las vistas.
         require_once 'view/header.php';
         require_once 'view/proveedor/proveedor-editar.php';
         require_once 'view/footer.php';
