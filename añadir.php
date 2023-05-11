@@ -13,6 +13,11 @@
             text-align: center;
         }
 
+        input:focus{
+            box-shadow: none !important;
+            
+        }
+
     </style>
 </head>
 
@@ -51,17 +56,17 @@
 
             <div class="mb-4">
                 <label for="codigo" class="form-label">Código</label>
-                <input type="text" name="codigo" class="form-control" id="codigo" placeholder="Valores numericos unicamente">
+                <input type="text" name="codigo" class="form-control border-0 border-bottom border-success border-2 rounded-0" id="codigo" placeholder="Valores numericos unicamente">
             </div>
 
             <div class="mb-4">
                 <label for="nombre" class="form-label">Nombre del producto</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="No se aceptan valores numericos">
+                <input type="text" name="nombre" class="form-control border-0 border-bottom border-success border-2 rounded-0" id="nombre" placeholder="No se aceptan valores numericos">
             </div>
 
             <div class="mb-4">
                 <label for="descripcion" class="form-label">Descripción del producto</label>
-                <input type="text" name="descripcion" class="form-control" id="descripcion" placeholder="Valores numericos acompañados por letras (500g)">
+                <input type="text" name="descripcion" class="form-control border-0 border-bottom border-success border-2 rounded-0" id="descripcion" placeholder="Valores numericos acompañados por letras (500g)">
             </div>
 
             <div style="text-align:center;">

@@ -22,6 +22,13 @@ $consulta = $query->fetch(PDO::FETCH_ASSOC);
     <title>Editar</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        input:focus {
+            box-shadow: none !important;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -50,28 +57,28 @@ $consulta = $query->fetch(PDO::FETCH_ASSOC);
     </header>
     <main class="container py-4">
         <div class="pb-2 text-center">
-             <h4>ACTUALIZAR DATOS</h4>
-             <h6>Tenga en cuenta los parametros para cada uno</h6>
+            <h4>ACTUALIZAR DATOS</h4>
+            <h6>Tenga en cuenta los parametros para cada uno</h6>
         </div>
 
         <form action="guardar.php" method="POST">
 
-                <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
-            
+            <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
+
 
             <div class="mb-4">
                 <label for="codigo" class="form-label">Código</label>
-                <input type="text" name="codigo" class="form-control" id="codigo" value="<?php echo $consulta['codigo'] ?>">
+                <input type="text" name="codigo" class="form-control border-0 border-bottom border-warning border-2 rounded-0 border-opacity-75" id="codigo" value="<?php echo $consulta['codigo'] ?>">
             </div>
 
             <div class="mb-4">
                 <label for="nombre" class="form-label">Nombre del producto</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" value="<?php echo $consulta['nombre'] ?>">
+                <input type="text" name="nombre" class="form-control border-0 border-bottom border-warning border-2 rounded-0 border-opacity-75" id="nombre" value="<?php echo $consulta['nombre'] ?>">
             </div>
 
             <div class="mb-4">
                 <label for="descripcion" class="form-label">Descripción del producto</label>
-                <input type="text" name="descripcion" class="form-control" id="descripcion" value="<?php echo $consulta['descripcion'] ?>"">
+                <input type="text" name="descripcion" class="form-control border-0 border-bottom border-warning border-2 rounded-0 border-opacity-75" id="descripcion" value="<?php echo $consulta['descripcion'] ?>"">
             </div>
 
             <div style=" text-align:center;">
