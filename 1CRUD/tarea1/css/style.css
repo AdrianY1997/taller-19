@@ -226,6 +226,14 @@ p{
     margin-top: 30px;
 }
 
+.form form input[type=number]::-webkit-inner-spin-button,
+.form form input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form form input[type=number] {-moz-appearance:textfield;}
+
+
 .form form input, .form form textarea{
     width: 90%;
     height: 30px;
