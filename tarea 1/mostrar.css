@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(206, 163, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;margin-top: 8%;
+
+}
+#tabla{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+}
+.caja1 h1{
+    position: absolute;
+    top: 40px;
+    left: 40%;
+}
+   
