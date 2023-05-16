@@ -7,9 +7,9 @@ class Database {
     //charset = utf8, indica la codificación de caracteres utilizada.
     //root = nombre de usuario (solo para fines académicos=root).
     //’’ = contraseña del root (solo para fines académicos).
-    public static function Conectar() {
+    public static function conectar() {
         try {
-            $pdo = new PDO('mysql:host=localhost;dbname=mvc_php;charset=utf8', 'root', ' ');
+            $pdo = new PDO('mysql:host=localhost;port=1002;dbname=mvc_php;charset=utf8mb4', 'root', '');
         } catch (PDOException $ex) {
             echo $ex;
         }

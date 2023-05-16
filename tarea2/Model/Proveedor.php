@@ -1,5 +1,5 @@
 <?php
-class proveedor {
+class Proveedor {
     //Atributo para conexión a SGBD
     private $pdo;
     //Atributos del objeto proveedor 
@@ -10,13 +10,13 @@ class proveedor {
     //Método de conexión a SGBD.
     public function __CONSTRUCT() {
         try {
-            $this->pdo = Database::Conectar();
+            $this->pdo = Database::conectar();
         } catch (Exception $e) {
             die($e->getMessage());
         }
     }
 
-    public function Listar() {
+    public function listar() {
         try {
             $result = [];
             //Sentencia SQL para selección de datos.
@@ -34,7 +34,7 @@ class proveedor {
 
     //Este método obtiene los datos del proveedor a partir del nit
     //utilizando SQL.
-    public function Obtener($nit) {
+    public function obtener($nit) {
         try {
             //Sentencia SQL para selección de datos utilizando
             //la cláusula Where para especificar el nit del proveedor.
@@ -48,7 +48,7 @@ class proveedor {
     }
 
     //Este método elimina la tupla proveedor dado un nit.
-    public function Eliminar($nit) {
+    public function eliminar($nit) {
         try {
             //Sentencia SQL para eliminar una tupla utilizando
             //la cláusula Where.
@@ -61,7 +61,7 @@ class proveedor {
 
     //Método que actualiza una tupla a partir de la cláusula
     //Where y el nit del proveedor.
-    public function Actualizar($data) {
+    public function actualizar($data) {
         try {
             //Sentencia SQL para actualizar los datos.
             $sql = "UPDATE proveedor SET razonS = ?, dir = ?, tel = ? WHERE nit = ?";
@@ -81,7 +81,7 @@ class proveedor {
     }
 
     //Método que registra un nuevo proveedor a la tabla.
-    public function Registrar(proveedor $data) {
+    public function registrar(proveedor $data) {
         try {
             //Sentencia SQL.
             $sql = "INSERT INTO proveedor (nit,razonS,dir,tel) VALUES (?, ?, ?, ?)";

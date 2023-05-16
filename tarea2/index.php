@@ -1,43 +1,26 @@
 <?php
-
-include_once "Controller/ErrorController.php";
-include_once 'Model/Database.php';
-
-
-if (!isset($_REQUEST["url"])) header("Location: inicio");
-
-// Obtengo la url y si esta no existe entonces asigno "inicio" por defecto
-$url = $_REQUEST["url"];
-
-// Subdivido la cadena según el carácter "/"
-$url = explode("/", $url);
-
-// Asigno a su respectiva variable cada valor
-$controller = array_shift($url);
-$function = array_shift($url) ?? "index";
-$param = $url;
-
-// Genero la ruta y el nombre del controlador
-$controllerPath = "Controller/" . ucfirst($controller) . "Controller.php";
-$controllerClass = ucfirst($controller) . "Controller";
-
-// Valido si la ruta al controlador existe
-if (file_exists($controllerPath)) {
-    // Incluyo el controlador y hago una instancia
-    include_once $controllerPath;
-    $c = new $controllerClass();
-
-    // Compruebo si el método existe
-    if (method_exists($c, $function)) {
-        // Invoco el método
-        $c->$function();
-    } else {
-        // Si no existe el método invoco el error 405
-        $error = new ErrorController();
-        $error->error405();
-    }
+//Se incluye la configuración de conexión a datos en el
+//SGBD: MariaDB.
+require_once 'model/database.php';
+//Para registrar productos es necesario iniciar los proveedores
+//de los mismos, por ello la variable controller para este
+//ejercicio se inicia con el ‘proveedor’.
+$controller = 'proveedor';
+// Todo esta lógica hará el papel de un FrontController
+if (!isset($_REQUEST['c'])) {
+    //Llamado de la página principal
+    require_once "Controller/" . ucfirst($controller) . "Controller.php";
+    $controller = ucfirst($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->index();
 } else {
-    // Si no existe el controlador invoco el error 404
-    $c = new ErrorController();
-    $c->error404();
+    // Obtiene el controlador a cargar
+    $controller = strtolower($_REQUEST['c']);
+    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
+    // Instancia el controlador
+    require_once "controller/" . ucfirst($controller) . "Controller.php";
+    $controller = ucfirst($controller) . 'Controller';
+    $controller = new $controller;
+    // Llama la acción
+    call_user_func(array($controller, $accion));
 }
